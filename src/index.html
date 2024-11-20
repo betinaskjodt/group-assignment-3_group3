@@ -10,141 +10,25 @@
   </head>
   <body>
     <header>
-      <h1>Slideshow</h1>
-    </header>
-    <main>
-      <div class="slideshow-container">
-        <div class="slideshow slideshow--active">
-          <div class="slideshow__img-number slideshow__img-number--active">
-            1/10
+           <h1>Slideshow</h1> 
+      </header>
+      <main>
+          <div class="slideshow-container">
+            <!-- Här läggs bilden dynamiskt -->
+            <div class="slideshow__image-container">
+              <img class="slideshow__image" src="" alt="" />
+            </div>
+      
+            <!-- Knapp för navigering -->
+            <div class="slideshow__controls">
+              <button class="slideshow__button slideshow__button--prev" label="Previous Slide"> Previous
+              </button>
+              <button class="slideshow__button slideshow__button--next" label="Next Slide">
+                Next
+              </button>
+            </div>
           </div>
-          <img
-            class="slideshow__img slideshow__img--active"
-            src="./assets/images/berlin.jpeg"
-            alt="berlin capital"
-          />
-          <p class="slideshow__description slideshow__description--active">
-            Berlin
-          </p>
-        </div>
-
-        <div class="slideshow">
-          <div class="slideshow__img-number">2/10</div>
-          <img
-            class="slideshow__img"
-            src="./assets/images/london.jpeg"
-            alt="london capital"
-          />
-          <p class="slideshow__description">London</p>
-        </div>
-
-        <div class="slideshow">
-          <div class="slideshow__img-number">3/10</div>
-          <img
-            class="slideshow__img"
-            src="./assets/images/paris.jpeg"
-            alt="paris capital"
-          />
-          <p class="slideshow__description">Paris</p>
-        </div>
-
-        <div class="slideshow">
-          <div class="slideshow__img-number">4/10</div>
-          <img
-            class="slideshow__img"
-            src="./assets/images/rome.jpeg"
-            alt="rome captial"
-          />
-          <p class="slideshow__description">Rome</p>
-        </div>
-
-        <div class="slideshow">
-          <div class="slideshow__img-number">5/10</div>
-          <img
-            class="slideshow__img"
-            src="./assets/images/stockholm.jpeg"
-            alt="stockholm"
-          />
-          <p class="slideshow__description">Stockholm</p>
-        </div>
-
-        <div class="slideshow">
-          <div class="slideshow__img-number">6/10</div>
-          <img
-            class="slideshow__img"
-            src="./assets/images/copenhagen.jpeg"
-            alt=""
-          />
-          <p class="slideshow__description">Copenhagen</p>
-        </div>
-
-        <div class="slideshow">
-          <div class="slideshow__img-number">7/10</div>
-          <img
-            class="slideshow__img"
-            src="./assets/images/madrid.jpeg"
-            alt=""
-          />
-          <p class="slideshow__description">Madrid</p>
-        </div>
-
-        <div class="slideshow">
-          <div class="slideshow__img-number">8/10</div>
-          <img
-            class="slideshow__img"
-            src="./assets/images/dublin.jpeg"
-            alt=""
-          />
-          <p class="slideshow__description">Dublin</p>
-        </div>
-
-        <div class="slideshow">
-          <div class="slideshow__img-number">9/10</div>
-          <img
-            class="slideshow__img"
-            src="./assets/images/reikjavik.jpeg"
-            alt=""
-          />
-          <p class="slideshow__description">Reykjavik</p>
-        </div>
-
-        <div class="slideshow">
-          <div class="slideshow__img-number">10/10</div>
-          <img class="slideshow__img" src="./assets/images/athen.jpeg" alt="" />
-          <p class="slideshow__description">Athen</p>
-        </div>
-
-        <div class="slideshow__btn-container">
-          <button class="slideshow__btn back-btn">
-            <img
-              class="slideshow__btn-icon"
-              src="./assets/icons/arrow_back_28px.svg"
-              alt="back arrow"
-            />
-          </button>
-          <button class="slideshow__btn next-btn">
-            <img
-              class="slideshow__btn-icon"
-              src="./assets/icons/arrow_forward_28px.svg"
-              alt="forward arrow"
-            />
-          </button>
-        </div>
-
-        <div class="slideshow__dot-containter">
-          <span class="slideshow__dot slideshow__dot--active"></span>
-          <span class="slideshow__dot"></span>
-          <span class="slideshow__dot"></span>
-          <span class="slideshow__dot"></span>
-          <span class="slideshow__dot"></span>
-          <span class="slideshow__dot"></span>
-          <span class="slideshow__dot"></span>
-          <span class="slideshow__dot"></span>
-          <span class="slideshow__dot"></span>
-          <span class="slideshow__dot"></span>
-        </div>
-      </div>
-    </main>
+        </main> 
 
     <script src="./js/app.js"></script>
   </body>
