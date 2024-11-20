@@ -1,17 +1,18 @@
 const slides = [
-  { img: "./assets/images/berlin.jpeg", alt: "Berlin capital", caption: "Berlin" },
-  { img: "./assets/images/london.jpeg", alt: "London capital", caption: "London" },
-  { img: "./assets/images/paris.jpeg", alt: "Paris capital", caption: "Paris" },
-  { img: "./assets/images/rome.jpeg", alt: "Rome capital", caption: "Rome" },
-  { img: "./assets/images/stockholm.jpeg", alt: "Stockholm capital", caption: "Stockholm" },
-  { img: "./assets/images/athen.jpeg", alt: "Athen capital", caption: "Athen" },
-  { img: "./assets/images/reikjavik.jpeg", alt: "Reykjavik capital", caption: "Reykjavik" },
-  { img: "./assets/images/madrid.jpeg", alt: "Madrid capital", caption: "Madrid" }
+  { img: "./assets/images/berlin.jpeg", alt: "Berlin capital", caption: "Berlin", Number: "1/8" },
+  { img: "./assets/images/london.jpeg", alt: "London capital", caption: "London", Number: "2/8" },
+  { img: "./assets/images/paris.jpeg", alt: "Paris capital", caption: "Paris", Number: "3/8" },
+  { img: "./assets/images/rome.jpeg", alt: "Rome capital", caption: "Rome", Number: "4/8" },
+  { img: "./assets/images/stockholm.jpeg", alt: "Stockholm capital", caption: "Stockholm", Number: "5/8" },
+  { img: "./assets/images/athen.jpeg", alt: "Athen capital", caption: "Athen", Number: "6/8" },
+  { img: "./assets/images/reikjavik.jpeg", alt: "Reykjavik capital", caption: "Reykjavik", Number: "7/8" },
+  { img: "./assets/images/madrid.jpeg", alt: "Madrid capital", caption: "Madrid", Number: "8/8" }
 ];
 
 const prevButton = document.querySelector(".slideshow__button--prev");
 const nextButton = document.querySelector(".slideshow__button--next");
 const imageElement = document.querySelector(".slideshow__image"); 
+const numberElement = document.querySelector(".slideshow__number");
 
 let currentSlide = 0; // Start på den första bilden
 
@@ -20,6 +21,9 @@ function updateSlide() {
   const slide = slides[currentSlide];
   imageElement.src = slide.img; // Uppdaterar bildens src
   imageElement.alt = slide.alt; // Uppdaterar bildens alt-text
+  
+  numberElement.textContent = slide.Number;
+  
 }
 
 // Navigera till nästa bild
