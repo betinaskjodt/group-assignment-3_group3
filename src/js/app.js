@@ -6,7 +6,7 @@ const slides = [
   { img: "./assets/images/stockholm.jpeg", alt: "Stockholm capital", caption: "Stockholm", Number: "5/8" },
   { img: "./assets/images/athen.jpeg", alt: "Athen capital", caption: "Athen", Number: "6/8" },
   { img: "./assets/images/reikjavik.jpeg", alt: "Reykjavik capital", caption: "Reykjavik", Number: "7/8" },
-  { img: "./assets/images/madrid.jpeg", alt: "Madrid capital", caption: "Madrid", Number: "8/8" }
+  { img: "./assets/images/madrid.jpg", alt: "Madrid capital", caption: "Madrid", Number: "8/8" }
 ];
 
 const prevButton = document.querySelector(".slideshow__button--prev");
