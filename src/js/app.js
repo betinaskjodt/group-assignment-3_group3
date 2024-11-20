@@ -13,6 +13,8 @@ const prevButton = document.querySelector(".slideshow__button--prev");
 const nextButton = document.querySelector(".slideshow__button--next");
 const imageElement = document.querySelector(".slideshow__image"); 
 const numberElement = document.querySelector(".slideshow__number");
+const captionElement = document.querySelector(".slideshow__caption");
+const dotElement = document.querySelectorAll(".slideshow__dot");
 
 let currentSlide = 0; // Start på den första bilden
 
@@ -21,9 +23,12 @@ function updateSlide() {
   const slide = slides[currentSlide];
   imageElement.src = slide.img; // Uppdaterar bildens src
   imageElement.alt = slide.alt; // Uppdaterar bildens alt-text
-  
   numberElement.textContent = slide.Number;
-  
+  captionElement.textContent = slide.caption;
+
+  dotElement.forEach((dot, index) => {
+  dot.classList.toggle("slideshow__dot--active", index === currentSlide);
+});
 }
 
 // Navigera till nästa bild
