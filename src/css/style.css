@@ -1,48 +1,71 @@
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url(../assets/fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Rubik-Black";
+  src: url(../assets/fonts/Rubik-Black.ttf);
+}
+
 body {
-  font-family: Arial, sans-serif;
+  width: 100%;
+  font-family: var(--font-family-regular), Arial, sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f0f0;
 }
 
 header {
+  width: 100%;
+  height: 200px;
   text-align: center;
-
 }
 
 h1 {
-  
-
+  padding: var(--spacing-large);
+  text-transform: uppercase;
+  font-size: var(--font-size-header);
 }
 
-.slideshow-container {
+.slideshow__container {
   position: relative;
-  width: 80%;
+  width: 100%;
   max-width: 900px;
-  overflow: hidden;
   border-radius: 10px;
   background-color: #fff;
 }
 
-.slideshow__image-container {
-  position: relative;
-}
+ .slideshow {
+  height: 800px;
+  width: 900px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+ }
 
 .slideshow__image {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 10px;
 }
 
-.slideshow__controls {
+.slideshow__number {
   position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  z-index: 10;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+  font-size: var(--font-size-medium);
+}
+
+.slideshow__caption {
+  font-size: var(--font-size-large);
+  text-transform: uppercase;
+  padding: var(--spacing-medium);
 }
 
 .slideshow__button {
@@ -56,9 +79,33 @@ h1 {
 }
 
 .slideshow__button--prev {
-  left: 10px;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: 1;
 }
 
 .slideshow__button--next {
-  right: 10px;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  z-index: 1;
+}
+
+.slideshow__dots-container {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-large);
+  padding: var(--spacing-large);
+}
+
+.slideshow__dot {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.slideshow__dot--active {
+  background-color: var(--primary-active-color);
 }
