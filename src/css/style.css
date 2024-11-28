@@ -58,7 +58,7 @@ h1 {
   position: absolute;
   z-index: 2;
   top: 5%;
-  right: 45%;
+  right: 47%;
   font-size: var(--font-size-medium);
 }
 
@@ -179,7 +179,7 @@ h1 {
   }
 
   .slideshow__number {
-    top: 7%;
+    top: 6%;
     font-size: var(--font-size-base);
   }
 
